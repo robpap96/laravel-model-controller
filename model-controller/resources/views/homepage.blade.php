@@ -20,9 +20,15 @@
     <main class="">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    
-                </div>
+                @foreach ($movies as $movie)
+                    <div class="col-12">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                            <h5 class="card-title">{{$movie->title}}</h5>
+                            </div>
+                        </div>
+                    </div>                    
+                @endforeach
             </div>
 
         </div>
